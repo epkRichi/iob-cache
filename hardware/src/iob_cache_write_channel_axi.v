@@ -10,7 +10,7 @@ module iob_cache_write_channel_axi #(
    parameter                FE_DATA_W     = `IOB_CACHE_FE_DATA_W,
    parameter                BE_ADDR_W     = `IOB_CACHE_BE_ADDR_W,
    parameter                BE_DATA_W     = `IOB_CACHE_BE_DATA_W,
-   parameter                WRITE_POL     = `IOB_CACHE_WRITE_THROUGH,
+   parameter                WRITE_POL     = `IOB_CACHE_WRITE_POL,
    parameter                WORD_OFFSET_W = `IOB_CACHE_WORD_OFFSET_W,
    parameter                AXI_ID_W      = `IOB_CACHE_AXI_ID_W,
    parameter [AXI_ID_W-1:0] AXI_ID        = `IOB_CACHE_AXI_ID,

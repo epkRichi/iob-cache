@@ -19,7 +19,7 @@ module iob_cache_sim_wrapper #(
    parameter                WORD_OFFSET_W = `IOB_CACHE_WORD_OFFSET_W,
    parameter                WTBUF_DEPTH_W = `IOB_CACHE_WTBUF_DEPTH_W,
    parameter                REP_POLICY    = `IOB_CACHE_REP_POLICY,
-   parameter                WRITE_POL     = `IOB_CACHE_WRITE_THROUGH,
+   parameter                WRITE_POL     = `IOB_CACHE_WRITE_POL,
 `ifdef IOB_CACHE_AXI
    parameter                AXI_ID_W      = `IOB_CACHE_AXI_ID_W,
    parameter [AXI_ID_W-1:0] AXI_ID        = `IOB_CACHE_AXI_ID,

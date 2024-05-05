@@ -14,8 +14,8 @@ module iob_cache_memory #(
    parameter WORD_OFFSET_W = `IOB_CACHE_WORD_OFFSET_W,
    parameter WTBUF_DEPTH_W = `IOB_CACHE_WTBUF_DEPTH_W,
 
-   parameter WRITE_POL  = `IOB_CACHE_WRITE_THROUGH,
-   parameter REP_POLICY = `IOB_CACHE_PLRU_TREE,
+   parameter WRITE_POL  = `IOB_CACHE_WRITE_POL,
+   parameter REP_POLICY = `IOB_CACHE_REP_POLICY,
 
    parameter USE_CTRL     = `IOB_CACHE_USE_CTRL,
    parameter USE_CTRL_CNT = `IOB_CACHE_USE_CTRL_CNT,

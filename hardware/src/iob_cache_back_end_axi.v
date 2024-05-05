@@ -9,7 +9,7 @@ module iob_cache_back_end_axi #(
    parameter                BE_ADDR_W     = `IOB_CACHE_BE_ADDR_W,
    parameter                BE_DATA_W     = `IOB_CACHE_BE_DATA_W,
    parameter                WORD_OFFSET_W = `IOB_CACHE_WORD_OFFSET_W,
-   parameter                WRITE_POL     = `IOB_CACHE_WRITE_THROUGH,
+   parameter                WRITE_POL     = `IOB_CACHE_WRITE_POL,
    parameter                AXI_ID_W      = `IOB_CACHE_AXI_ID_W,
    parameter [AXI_ID_W-1:0] AXI_ID        = `IOB_CACHE_AXI_ID,
    parameter                AXI_LEN_W     = `IOB_CACHE_AXI_LEN_W,

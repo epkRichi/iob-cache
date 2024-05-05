@@ -7,7 +7,7 @@ module iob_cache_replacement_policy #(
    parameter N_WAYS     = 8,
    parameter NLINES_W   = 0,
    parameter NWAYS_W    = $clog2(N_WAYS),
-   parameter REP_POLICY = `IOB_CACHE_PLRU_TREE
+   parameter REP_POLICY = `IOB_CACHE_REP_POLICY
 ) (
    input                 clk_i,
    input                 cke_i,
