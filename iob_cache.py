@@ -228,7 +228,7 @@ class iob_cache(iob_module):
                 {
                     "name": "NWAYS_W",
                     "type": "P",
-                    "val": "1",
+                    "val": "0",
                     "min": "0",
                     "max": "8",
                     "descr": "Number of cache ways (log2): the miminum is 0 for a directly mapped cache; the default is 1 for a two-way cache; the maximum is limited by the desired maximum operating frequency, which degrades with the number of ways. ",
@@ -236,7 +236,7 @@ class iob_cache(iob_module):
                 {
                     "name": "NLINES_W",
                     "type": "P",
-                    "val": "7",
+                    "val": "1",
                     "min": "",
                     "max": "",
                     "descr": "Line offset width (log2): the value of this parameter equals the number of cache lines, given by 2**NLINES_W.",
@@ -244,7 +244,7 @@ class iob_cache(iob_module):
                 {
                     "name": "WORD_OFFSET_W",
                     "type": "P",
-                    "val": "3",
+                    "val": "1",
                     "min": "1",
                     "max": "",
                     "descr": "Word offset width (log2):  the value of this parameter equals the number of words per line, which is 2**OFFSET_W. ",
@@ -268,7 +268,7 @@ class iob_cache(iob_module):
                 {
                     "name": "WRITE_POL",
                     "type": "P",
-                    "val": "0 ",
+                    "val": "1 ",
                     "min": "0",
                     "max": "1",
                     "descr": "Write policy: set to 0 for write-through or set to 1 for write-back.",
@@ -276,7 +276,7 @@ class iob_cache(iob_module):
                 {
                     "name": "USE_CTRL",
                     "type": "P",
-                    "val": "0",
+                    "val": "1",
                     "min": "0",
                     "max": "1",
                     "descr": "Instantiates a cache controller (1) or not (0). The cache controller provides memory-mapped software accessible registers to invalidate the cache data contents, and monitor the write through buffer status using the front-end interface. To access the cache controller, the MSB of the address mut be set to 1. For more information refer to the example software functions provided.",
@@ -284,7 +284,7 @@ class iob_cache(iob_module):
                 {
                     "name": "USE_CTRL_CNT",
                     "type": "P",
-                    "val": "0",
+                    "val": "1",
                     "min": "0",
                     "max": "1",
                     "descr": "Instantiates hit/miss counters for reads, writes or both (1), or not (0). This parameter is meaningful if the cache controller is present (USE_CTRL=1), providing additional software accessible functions for these functions.",
